@@ -1,280 +1,345 @@
-<!DOCTYPE html>
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-
-    <link rel="icon" type="image/svg+xml" href="/style/logo.png">
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="content-language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旺旺商聊下载 · 更有趣的交友</title>
-    <meta name="keywords" content="旺旺商聊,旺旺商聊官网,旺旺商聊下载,旺旺商聊官网下载">
-    <meta name="description" content="旺旺商聊APP是一款专为熟人打造的私密聊天软件，支持高效、安全沟通，让你随时与好友畅聊无忧。内置在线购物功能，交流与购物一站解决，体验便捷新生活。">
-    <script type="module" crossorigin="" src="./style/index-9e28c370.js.下载"></script>
-    <link rel="stylesheet" href="./style/index-6b578916.css">
-    <link rel="stylesheet" href="./style/index-a0ad7fbd.css">
-    <link rel="stylesheet" href="./style/base-b6e288d4.css">
-    <link rel="stylesheet" href="./style/home-e8224928.css">
-    <link rel="modulepreload" as="script" crossorigin="" href="./style/index-9e28c370.js.下载">
-    <link rel="stylesheet" href="./style/mySwipe-1049c61e.css">
-    <link rel="stylesheet" href="./style/index-a354b14a.css">
-    <link rel="stylesheet" href="./style/el-menu-item-0a944f2e.css">
-<style type="text/css">@font-face { font-family: TencentSans; src: url("chrome-extension://lkjkfecdnfjopaeaibboihfkmhdjmanm/static/fonts/TencentSans.woff2"); }</style></head>
+	<link rel="icon" id="favicon" href="/logo.ico" type="image/x-icon">
+    <title>钉钉下载 - 钉钉支持Windows、Mac、Linux及移动端</title>
+    <meta name="description" content="下载最新版钉钉客户端，支持Windows、Mac、Linux、HarmonyOS、Android、iOS等操作系统，提升办公效率，实现智能协同。">
+    <meta name="keywords" content="钉钉下载, DingTalk客户端, 阿里钉钉, 移动办公软件, 远程协作工具, 企业沟通, 视频会议">
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f6fa;
+            color: #333;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #1890ff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .logo img {
+            height: 24px;
+            margin-right: 8px;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-item {
+            margin-left: 15px;
+            padding: 6px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .nav-item.primary {
+            background-color: #1890ff;
+            color: white;
+        }
+        
+        .nav-item.outline {
+            border: 1px solid #1890ff;
+            color: #1890ff;
+        }
+        
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .hero p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .os-support {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .version-info {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .version-info a {
+            color: #1890ff;
+            text-decoration: none;
+        }
+        
+        .download-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .download-option {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .download-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .download-option img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .download-option p {
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 5px;
+            width: fit-content;
+            margin: 0 auto 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tab {
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .tab.active {
+            background-color: #f0f2f5;
+            font-weight: 500;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .feature {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-content {
+            flex: 1;
+        }
+        
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .feature p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
 <body>
-    <div id="app" data-v-app="">
-        <div class="w-screen min-h-screen flex flex-col">
-            <div class="w-full h-24 border flex justify-center">
-                <div class="w-9/12 h-24 flex justify-between items-center"><img class="h-10" src="./style/logo_navigation.png" alt="logo_navigation">
-                    <div class="inline-flex justify-between items-center">
-                        <div class="inline-flex justify-between items-center cursor-pointer"><img class="h-5 mr-1 mb-[-2.5px]" src="./style/home.png" alt="logo_navigation">
-                            <div class="h-5"> 首页 </div>
-                        </div>
-                        <div class="down ml-5 mb-[-2.5px] text-base inline-flex justify-between items-center cursor-pointer">
-                            开发文档 </div>
-                    </div>
-                </div>
+    <header class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#1890ff">
+                <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2.5L17 8v8l-5 3-5-3V8l5-3.5z"/>
+            </svg>
+            钉钉·下载页面
+        </div>
+        <div class="nav">
+           
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="hero">
+            <h1>下载钉钉客户端</h1>
+            <p>多端同步，无缝切换</p>
+            <a href="/"><img src="dl.png" alt="企业钉钉官网下载"></a>
+        </div>
+        
+        <div class="os-support">
+            同时支持 HarmonyOS、Android、iOS、iPadOS、macOS、Windows、Linux 版本
+        </div>
+        
+        <div class="version-info">
+            请确保您的钉钉客户端为最新版本，以获取最新功能。<a href="#">钉钉的功能和板块</a><br>
+            开发者：钉钉科技有限公司 | <a href="#">使用协议</a> | <a href="#">隐私政策</a> | 版本号：7.6.60 | 更新时间：2025-07-28        </div>
+        
+        <div class="download-options">
+            <div class="download-option">
+                <img src="/placeholder.png?height=50&width=50" alt="二维码扫描下载钉钉客户端">
+                <p>扫码下载移动端</p>
             </div>
-            <div class="grow flex justify-center">
-                <div class="w-full h-full flex flex-col justify-center items-center">
-                    <div class="w-full h-[444px] relative bg-slate-50">
-                        <div data-v-784190f5="" class="w-screen h-full overflow-hidden">
-                            <div data-v-784190f5="" class="w-[3840px] h-full flex animation-wiggle">
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sfoot.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sling.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sshirt.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sskirt.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sfoot.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sling.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sshirt.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                                <div data-v-784190f5="" class="h-full p-2.5 box-border flex flex-col justify-between" style="width: 100%;">
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""></div>
-                                    <div data-v-784190f5="" class="flex justify-between">
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sshose.png" alt=""></div>
-                                        </div>
-                                        <div data-v-784190f5="" class="h-full"><img data-v-784190f5="" class="w-52 h-52" src="./style/sskirt.png" alt=""></div>
-                                        <div data-v-784190f5="" class="h-full">
-                                            <div data-v-784190f5="" class="flex h-full flex-col justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/shead.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sfoot.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div data-v-784190f5="" class="flex justify-between"><img data-v-784190f5="" class="w-24 h-24" src="./style/sling.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/sskirt.png" alt=""><img data-v-784190f5="" class="w-24 h-24" src="./style/swallet.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-[544px] ml-[-290px] absolute inset-x-1/2 top-10 flex flex-col justify-center items-center">
-                            <img class="w-20 h-20 mb-5" src="./style/logo_wwsl.png" alt="logo_wwsl">
-                            <h3 class="text-3xl w-80">旺旺商聊 更有趣的体验</h3>
-                            <h6 class="leading-10">旺旺商聊商务合作账号：100000</h6>
-                            <div class="flex justify-between mt-8">
-                                <div class="down h-28 w-28 mx-3 relative rounded-full overflow-hidden hover:rounded-none hover:cursor-none hover:h-36">
-                                    <div class="h-28 w-28 flex flex-col justify-center items-center text-white absolute top-0 left-0 hover:opacity-0">
-                                        <div class="rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/mac.png" alt="mac"> IOS
-                                        </div>
-                                    </div>
-                                    <div class="h-28 w-28 text-black">
-                                        <div class="h-28 w-28 flex flex-col justify-center items-center text-white absolute top-0 left-0 hover:opacity-0">
-                                        <div class="down rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/mac.png" alt="mac"> IOS
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="down h-28 w-28 mx-3 relative rounded-full overflow-hidden hover:rounded-none hover:cursor-none hover:h-36">
-                                    <div class="h-28 w-28 flex flex-col justify-center items-center text-white absolute top-0 left-0 hover:opacity-0">
-                                        <div class="down rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/Andriod.png" alt="Andriod.png"> Andriod </div>
-                                    </div>
-                                    <div class="h-28 w-28 text-black">
-                                        <div button-name="Download">
-                                            <div class="down rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/Andriod.png" alt="Andriod.png"> Andriod </div>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="down rounded-full h-28 w-28 bg-[#2E7BFD] mx-3 flex flex-col justify-center items-center bg-gradient-to-r from-indigo-500 text-base text-white cursor-pointer relative">
-                                    <div class="flex flex-col h-28 w-28 justify-center items-center text-sm"><img class="w-7 h-7 mb-2" src="./style/win.png" alt="win">
-                                        Windows8.1以上 </div>
-                                    <div class="down h-28 w-28 flex flex-col justify-center items-center text-white absolute top-0 left-0 hover:opacity-0">
-                                        <div class="rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/win.png" alt="win.png">
-                                            Windows8.1 </div>
-                                    </div>
-                                </div>
-                                <div class="down h-28 w-28 mx-3 relative rounded-full overflow-hidden hover:rounded-none cursor-pointer">
-                                    <div class="h-28 w-28 flex flex-col justify-center items-center text-white absolute top-0 left-0 hover:opacity-0">
-                                        <div class="rounded-full h-28 w-28 bg-[#2E7BFD] flex flex-col justify-center items-center text-white bg-gradient-to-r from-indigo-500 text-base">
-                                            <img class="w-7 h-7 mb-2" src="./style/mac.png" alt="mac"> MacOS
-                                            <div class="absolute top-0">
-                                                <div class="w-full h-12 opacity-0">M系列芯片</div>
-                                                <div class="w-full h-12 opacity-0">Inter系列芯片</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="h-28 w-28 flex flex-col justify-between text-white bg-[#2E7BFD] bg-gradient-to-r from-indigo-500 rounded-lg p-2 box-border">
-                                        <div class="w-full h-10 bg-white bg-opacity-20 rounded-lg flex justify-center items-center text-sm">
-                                            M系列芯片 </div>
-                                        <div class="w-full h-10 bg-white bg-opacity-20 rounded-lg flex justify-center items-center text-sm">
-                                            Inter系列芯片 </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><img class="h-[400px]" src="./style/contentDisplay.png" alt="contentDisplay">
-                    <div class="w-[780px] mt-10">
-                        <h3 class="leading-10 text-[#0f1c33] text-lg">更新公告</h3>
-                        <div class="w-full h-36 overflow-y-auto bg-slate-100 rounded-md p-2 relative">
-                            <div class="w-full flex cursor-pointer">
-                                <div class="flex-none flex px-2 items-center"><button type="button" class="van-button van-button--primary van-button--mini">
-                                        <div class="van-button__content"><!----><span class="van-button__text">公告</span><!----></div>
-                                    </button></div>
-                                <div class="grow leading-8 truncate text-[#1f3966]">【旺旺商聊Android V3.4.0】 1.新增修改字体大小功能；
-                                    2.修复已知问题，提升用户体验；
-                                    如遇升级问题，请至官网下载更新：
-                                    地址1：https://www.wwtalk.com
-                                    地址2：wwtalk.com</div>
-                                <div class="flex-none leading-8 w-16 text-center pl-4 text-[#8a8f99]">07/31</div>
-                            </div>
-                            <div class="w-full flex cursor-pointer">
-                                <div class="flex-none flex px-2 items-center"><button type="button" class="van-button van-button--primary van-button--mini">
-                                        <div class="van-button__content"><!----><span class="van-button__text">公告</span><!----></div>
-                                    </button></div>
-                                <div class="grow leading-8 truncate text-[#1f3966]">【旺旺商聊IOS V3.3.9】 1.新增设置聊天背景；
-                                    2.修复已知问题，提升用户体验；
-                                </div>
-                                <div class="flex-none leading-8 w-16 text-center pl-4 text-[#8a8f99]">07/25</div>
-                            </div>
-                            <div class="w-full flex cursor-pointer">
-                                <div class="flex-none flex px-2 items-center"><button type="button" class="van-button van-button--primary van-button--mini">
-                                        <div class="van-button__content"><!----><span class="van-button__text">公告</span><!----></div>
-                                    </button></div>
-                                <div class="grow leading-8 truncate text-[#1f3966]">【旺旺商聊MAC V2.4.2】 1.修复已知问题；
-                                    2.优化相关操作流程，提升用户体验；
-                                    如遇升级问题，请至官网下载更新：
-                                    地址1：www.mechatmall.com
-                                    地址2：wwwqx.mechatmall.com</div>
-                                <div class="flex-none leading-8 w-16 text-center pl-4 text-[#8a8f99]">06/13</div>
-                            </div>
-                            <div class="w-full flex cursor-pointer">
-                                <div class="flex-none flex px-2 items-center"><button type="button" class="van-button van-button--primary van-button--mini">
-                                        <div class="van-button__content"><!----><span class="van-button__text">公告</span><!----></div>
-                                    </button></div>
-                                <div class="grow leading-8 truncate text-[#1f3966]">【旺旺商聊Windows V2.4.1】 1.修复已知问题；
-                                    2.优化相关操作流程，提升用户体验；
-                                    如遇升级问题，请至官网下载更新：
-                                    地址1：www.mechatmall.com
-                                    地址2：wwwqx.mechatmall.com</div>
-                                <div class="flex-none leading-8 w-16 text-center pl-4 text-[#8a8f99]">06/13</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="w-[780px] flex pt-10 pb-16"><img class="h-12 mr-5 cursor-pointer"
-                            src="style/app.png" alt="app"><img class="h-12 cursor-pointer"
-                            src="style/azApk.png" alt="apk"></div> -->
-                </div>
+            <div class="download-option">
+                <img src="/windows.png?height=50&width=50" alt="Windows 钉钉安装包下载">
+                <p>Windows 客户端</p>
             </div>
-            <div class="w-full h-48 border-t flex justify-center items-center flex-col">
-                <ul class="my-2 flex justify-between items-center text-[#1f3966] leading-5 cursor-pointer">
-                    <li class="flex-1 text-center text-[#2e7bfd]"> 服务协议 </li>
-                    <div role="separator" class="van-divider van-divider--hairline van-divider--vertical" style="border-color: rgb(31, 57, 102);"><!----></div>
-                    <li class="flex-1 text-center"> 隐私条款 </li>
-                    <div role="separator" class="van-divider van-divider--hairline van-divider--vertical" style="border-color: rgb(31, 57, 102);"><!----></div>
-                    <li class="flex-1 text-center"> 关于旺旺 </li>
-                    <div role="separator" class="van-divider van-divider--hairline van-divider--vertical" style="border-color: rgb(31, 57, 102);"><!----></div>
-                    <li class="flex-1 text-center"> 联系我们 </li>
-                </ul>
-                <div class="flex justify-center items-center text-xs text-[#8a8f99]"> 备案号：沪ICP备<a class="el-link el-link--info is-underline" href="https://wangwange.com/#" target="_blank"><!--v-if--><span class="el-link__inner">2024064706</span><!--v-if--></a>号-125
-                </div>
-                <div class="leading-5 my-2 text-[#8a8f99]">Copyright © 2019-2024 旺旺商聊 ALL RIGHTS RESERVED</div>
+            <div class="download-option">
+                <img src="/mac.png?height=50&width=50" alt="MacOS 钉钉安装包下载">
+                <p>MacOS 客户端</p>
+            </div>
+            <div class="download-option">
+                <img src="/linux.png?height=50&width=50" alt="Linux 钉钉安装包下载">
+                <p>Linux 客户端</p>
+            </div>
+            <div class="download-option">
+                <img src="/hongmeng.png?height=50&width=50" alt="HarmonyOS 钉钉安装包下载">
+                <p>鸿蒙系统设备客户端</p>
+            </div>
+            <div class="download-option">
+                <img src="/xr.png?height=50&width=50" alt="XR 钉钉安装包下载">
+                <p>XR 设备客户端</p>
             </div>
         </div>
-    </div>
-<script src="./style/main.js.下载"></script>
+        
+        <div class="tabs">
+            <div class="tab active">下载钉钉</div>
+            <div class="tab">热门功能</div>
+            <div class="tab">解决方案</div>
+            <div class="tab">服务帮助</div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉多维表</h3>
+                    <p>超数据、超视觉、全智能：一张表，数字化管理全覆盖</p>
+                </div>
+                <img class="feature-icon" src="/O1CN018uJIZa1WSxHXmoWu3_!!6000000002788-2-tps-240-240.png?height=80&width=80" alt="钉钉多维表图标">
+            </div>
+            
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉项目</h3>
+                    <p>简单好用的项目协同工具，为你提供项目管理、任务协同等解决方案</p>
+                </div>
+                <img class="feature-icon" src="/O1CN01tlfFL31kr8omwe7pc_!!6000000004736-2-tps-240-240.png?height=80&width=80" alt="钉钉项目图标">
+            </div>
+            
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉AI助理</h3>
+                    <p>你的超级助手，让AI为你打工，办公效率流</p>
+                </div>
+                <img class="feature-icon" src="/O1CN01NVfhIJ1xjR9zws4GV_!!6000000006479-2-tps-240-240.png?height=80&width=80" alt="钉钉AI助理图标">
+            </div>
+            
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉文档</h3>
+                    <p>支持多人协作，智能化只是创作与管理平台</p>
+                </div>
+                <img class="feature-icon" src="/O1CN01bNRfxa2ALhdmWHs5l_!!6000000008187-2-tps-240-240.png?height=80&width=80" alt="钉钉文档图标">
+            </div>
+            
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉管理套件</h3>
+                    <p>一站式管理数字化方案，AI助力企业经营升级</p>
+                </div>
+                <img class="feature-icon" src="/O1CN01oVAj6g1NCcc761vXE_!!6000000001534-2-tps-240-240.png?height=80&width=80" alt="钉钉管理套件图标">
+            </div>
+            
+            <div class="feature">
+                <div class="feature-content">
+                    <h3>钉钉会议</h3>
+                    <p>AI时代的沟通云会议，解放生产力，让高效会议自然发生</p>
+                </div>
+                <img class="feature-icon" src="/O1CN01ecBxtI1QnfV22pK1j_!!6000000002021-2-tps-240-240.png?height=80&width=80" alt="钉钉会议图标">
+            </div>
+        </div>
+        <p>钉钉（DingTalk）由阿里巴巴集团于2014年推出，是一款面向企业、学校与政府等组织的智能协同办公平台，致力于打造高效沟通与便捷管理的一体化解决方案。作为数字化办公模式的先驱，钉钉融合了即时通讯、智能日程、在线审批、协作文档、视频会议等核心功能，并实现了PC与移动端多平台无缝操作，助力各类组织高效运转。</p>
 
+<p>平台具备高安全性与强稳定性的技术架构，结合场景化功能设计，显著提升办公效率。例如，“DING一下”提醒功能、“消息已读未读”机制，以及支持千人级别的视频会议与屏幕共享，全面满足远程协作需求。此外，钉钉深度整合阿里云与支付宝生态，内嵌钉钉文档、Teambition项目管理、钉盘云存储等工具，并通过开放平台引入超过万款行业应用，广泛覆盖教育、医疗、制造等多个领域。</p>
 
+<p>截至2025年，钉钉已服务超过2500万家企业与组织，月活跃用户超2亿，在全球智能办公软件领域占据领先地位。平台秉持“让工作学习更简单”的使命，在远程办公与在线教育等关键场景中发挥重要作用，持续推动组织数字化转型，引领新一代工作方式革新。</p>
+    </main>
+</body>
+<script type="application/ld+json">
+{
+  "@context": "https://cn-ding.com/",
+  "@type": "SoftwareApplication",
+  "name": "钉钉",
+  "operatingSystem": "Windows, macOS, Linux, Android, iOS",
+  "applicationCategory": "BusinessApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
 
-
-</body></html>
+</html>
