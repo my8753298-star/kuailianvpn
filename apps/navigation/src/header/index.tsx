@@ -17,7 +17,7 @@ function Header(): React.JSX.Element {
             src="/abstract-geometric-logo.png"
             width="32"
           />
-          <span className="remote:text-xl remote:font-bold">Company</span>
+          <span className="remote:text-xl remote:font-bold">快连VPN下载</span>
         </a>
         <nav className="remote:hidden remote:sm:flex remote:gap-6 ">
           <a
